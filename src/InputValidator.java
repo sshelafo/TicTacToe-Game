@@ -1,6 +1,6 @@
 public class InputValidator {
     public static boolean isValidCoordinate(int coord) {
-        // Bug: should be >= 1, not > 1
-        return coord > 1 && coord <= 3;
+        // Fixed: now correctly validates 1-3 range
+        return coord >= 1 && coord <= 3;
     }
 }
